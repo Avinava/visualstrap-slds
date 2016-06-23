@@ -1,0 +1,102 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" docType="html-5.0">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="robots" content="noindex"/>
+        
+        <apex:stylesheet value="{!URLFOR($Resource.SLDS104,'/assets/styles/salesforce-lightning-design-system.css')}"/>
+        <style>
+            body {
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <br/><br/>
+        <c:notification isToast="true" title="Base Toast" style="margin-top:60px;"/>
+        <br/><br/>
+        <c:notification isToast="false" title="Base System Alert" style="margin-top:20px;">  </c:notification>
+       
+        <br/><br/>
+         <c:Card title="Test Card" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/standard-sprite/svg/symbols.svg#contact')}">
+            <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
+              <thead>
+                <tr class="slds-text-heading--label">
+                  <th scope="col">Name</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="slds-hint-parent">
+                  <th scope="row">
+                    <div class="slds-truncate"><a href="javascript:void(0);">Adam Choi</a></div>
+                  </th>
+                  <td>Company One</td>
+                  <td>Director of Operations</td>
+                  <td>adam@company.com</td>
+                </tr>
+              </tbody>
+            </table>
+        </c:Card>
+        <br/>
+        <c:Badge styleClass="slds-theme--inverse" title="1*12"/><br/><br/>
+        <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>
+            <c:column styleClass="slds-size--1-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 1 </c:column>      
+        </c:row><br/>
+        <c:Badge styleClass="slds-theme--inverse" title="2*6"/><br/><br/>
+        <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+            <c:column styleClass="slds-size--2-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 2 </c:column>
+        </c:row><br/>
+        <c:Badge styleClass="slds-theme--inverse" title="3*4"/><br/><br/>
+         <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--3-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 3 </c:column>
+            <c:column styleClass="slds-size--3-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 3 </c:column>
+            <c:column styleClass="slds-size--3-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 3 </c:column>
+            <c:column styleClass="slds-size--3-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 3 </c:column>
+        </c:row><br/>
+        <c:Badge styleClass="slds-theme--inverse" title="4*3"/><br/><br/>
+        <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--4-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 4 </c:column>
+            <c:column styleClass="slds-size--4-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 4 </c:column>
+            <c:column styleClass="slds-size--4-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 4 </c:column>
+        </c:row><br/>
+        <c:Badge styleClass="slds-theme--inverse" title="6*2"/><br/><br/>
+        <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--6-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 6 </c:column>
+            <c:column styleClass="slds-size--6-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 6 </c:column>
+        </c:row><br/>
+        <c:Badge styleClass="slds-theme--inverse" title="12*1"/><br/><br/>
+        <c:row styleClass="slds-grid--pull-padded">
+            <c:column styleClass="slds-size--12-of-12" boxStyle="slds-box--large slds-theme--shade slds-text-align--center"> 12 </c:column>     
+        </c:row>
+        <br/><br/>
+         <br/><br/>
+        <c:processBar >
+            <c:process title="Contacted" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#check')}" styleClass="slds-is-complete"></c:process>
+            <c:process title="Open" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#check')}" styleClass="slds-is-complete"></c:process>
+            <c:process title="Unqualified" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#check')}" styleClass="slds-is-current"></c:process>
+            <c:process title="Nurturing" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#check')}" styleClass="slds-is-incomplete"></c:process>
+            <c:process title="Closed" iconUrl="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#check')}" styleClass="slds-is-incomplete"></c:process>
+        </c:processBar>
+  </body>
+   
+</apex:page>

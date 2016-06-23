@@ -1,0 +1,8 @@
+<apex:component layout="none" selfClosing="true">
+    <div class="slds-spinner_container">
+        <div class="slds-spinner--brand slds-spinner slds-spinner--large" aria-hidden="false" role="alert">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>    
+</apex:component>

@@ -1,0 +1,9 @@
+<apex:component layout="none">
+    <apex:attribute type="String" name="styleClass" description="style classes used for this component"/>
+    <apex:attribute type="String" name="boxStyle" description="box style classes which is inside the column"/>
+    <div class="slds-col--padded {!styleClass}">
+        <div class="slds-box {!boxStyle}">
+            <apex:componentBody />
+        </div>
+    </div>
+</apex:component>

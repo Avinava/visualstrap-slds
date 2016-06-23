@@ -1,0 +1,6 @@
+<apex:component layout="none">
+    <apex:attribute type="String" name="styleClass" description="css style class use for this component"/>
+    <div class="slds-grid slds-wrap {!styleClass}">
+        <apex:componentBody />
+    </div>
+</apex:component>
