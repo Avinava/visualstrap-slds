@@ -1,4 +1,10 @@
 # visualstrap-slds
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=avinava&repo=visualstrap-slds">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
+
 Visualstrap component styled implementation of Lightning Design System for Visualforce Pages
 
 - Under Development
