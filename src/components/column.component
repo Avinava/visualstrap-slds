@@ -1,8 +1,8 @@
 <apex:component layout="none">
-    <apex:attribute type="String" name="styleClass" description="style classes used for this component"/>
-    <apex:attribute type="String" name="boxStyle" description="box style classes which is inside the column"/>
-    <div class="slds-col--padded {!styleClass}">
-        <div class="slds-box {!boxStyle}">
+    <apex:attribute type="String" name="colspan" description="column width in number between 1 to 12"/>
+    <apex:attribute type="String" name="boxType" description="box style classes which is inside the column"/>
+    <div class="slds-col--padded slds-size--{!colspan}-of-12">
+        <div class="slds-box slds-box--{!boxType} slds-theme--shade slds-text-align--center">
             <apex:componentBody />
         </div>
     </div>

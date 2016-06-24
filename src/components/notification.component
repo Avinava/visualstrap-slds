@@ -6,14 +6,15 @@
         <div class="slds-notify slds-notify--{!IF(isToast,'toast','alert slds-theme--alert-texture')}" role="alert">
             <button class="slds-button slds-button--icon-inverse slds-notify__close">
                 <svg aria-hidden="true" class="slds-button__icon {!IF(isToast,'slds-button__icon--large','')}">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.SLDS104,'/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
                 </svg>
                 <span class="slds-assistive-text">Close</span>
             </button>
+            <apex:outputPanel styleClass="slds-notify__content" rendered="{!isToast}" layout="none">
+                <h2 class="slds-text-heading--small">{!title}</h2>
+            </apex:outputPanel>
+            <apex:outputPanel layout="none" rendered="{!!isToast}"> <h2>{!title}</h2></apex:outputPanel> 
         </div>
-        <apex:outputPanel styleClass="slds-notify__content" rendered="{!isToast}" layout="block">
-            <h2 class="slds-text-heading--small">{!title}</h2>
-        </apex:outputPanel>
-         <apex:outputPanel layout="none" rendered="{!!isToast}"> <h2>Base System Alert</h2></apex:outputPanel>
+        
     </div>    
 </apex:component>
