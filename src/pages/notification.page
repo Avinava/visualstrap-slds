@@ -1,0 +1,22 @@
+<apex:page sidebar="false" standardStylesheets="false" showHeader="false" docType="html-5.0">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="robots" content="noindex"/>
+        
+        <apex:stylesheet value="{!URLFOR($Resource.visualstrap_slds,'/assets/styles/salesforce-lightning-design-system.css')}"/>
+        <style>
+            body {
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+         <br/><br/>
+        <c:notification isToast="true" title="Base Toast" style="margin-top:60px;"/>
+        <br/><br/>
+        <c:notification isToast="false" title="Base System Alert" style="margin-top:20px;">  </c:notification>
+  </body>
+   
+</apex:page>
