@@ -1,7 +1,0 @@
-<apex:component layout="none">
-    <div class="slds-tabs--path" role="application">
-        <ul class="slds-tabs--path__nav" role="tablist">
-            <apex:componentBody />
-        </ul>
-    </div>
-</apex:component>
