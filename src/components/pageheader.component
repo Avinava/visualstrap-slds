@@ -1,0 +1,20 @@
+<apex:component layout="none" selfClosing="true">
+    <apex:attribute name="title" type="String" description="title of this page Header"/>
+    <apex:attribute name="subtitle" type="String" description="subtitle of this page Headaer"/>
+    <apex:attribute name="icon" type="String" description="icon used for this component"/>
+    <div class="slds-page-header" role="banner">
+        <div class="slds-media slds-media--center">
+            <div class="slds-media__figure">
+                <!--
+                <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/standard-sprite/svg/symbols.svg#')}{!icon}"></use>
+                </svg>-->
+                <c:icon pathname="standard" name="{!icon}" />
+            </div>
+            <div class="slds-media__body">
+                <p class="slds-page-header__title slds-truncate slds-align-middle">{!title}</p>
+                <p class="slds-text-body--small page-header__info">{!subtitle}</p>
+            </div>
+        </div>
+    </div>
+</apex:component>

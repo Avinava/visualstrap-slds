@@ -4,7 +4,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="robots" content="noindex"/>
-        
+
         <apex:stylesheet value="{!URLFOR($Resource.visualstrap_slds,'/assets/styles/salesforce-lightning-design-system.css')}"/>
         <style>
             body {
@@ -14,10 +14,10 @@
     </head>
     <body>
         <br/><br/>
-        <c:notification isToast="true" title="Base Toast" style="margin-top:60px;"/>
+        <c:notificationtoast title="Base Toast" style="margin-top:60px;" icon="close" theme="error" texture="true"/>
         <br/><br/>
-        <c:notification isToast="false" title="Base System Alert" style="margin-top:20px;">  </c:notification>
-       
+        <c:notificationalert title="Base System Alert" style="margin-top:20px;" icon="close"  texture="true">  </c:notificationalert>
+
         <br/><br/>
          <c:card title="Test Card" icon="contact">
             <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
@@ -44,49 +44,49 @@
         <br/>
         <c:badge styleClass="slds-theme--inverse" title="1*12"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>
-            <c:column colspan="1" boxType="large"> 1 </c:column>      
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
+            <c:column colspan="1" type="large"> 1 </c:column>
         </c:row><br/>
         <c:badge styleClass="slds-theme--inverse" title="2*6"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="2" boxType="large"> 2 </c:column>
-            <c:column colspan="2" boxType="large"> 2 </c:column>
-            <c:column colspan="2" boxType="large"> 2 </c:column>
-            <c:column colspan="2" boxType="large"> 2 </c:column>
-            <c:column colspan="2" boxType="large"> 2 </c:column>
-            <c:column colspan="2" boxType="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
+            <c:column colspan="2" type="large"> 2 </c:column>
         </c:row><br/>
         <c:badge styleClass="slds-theme--inverse" title="3*4"/><br/><br/>
          <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="3" boxType="large"> 3 </c:column>
-            <c:column colspan="3" boxType="large"> 3 </c:column>
-            <c:column colspan="3" boxType="large"> 3 </c:column>
-            <c:column colspan="3" boxType="large"> 3 </c:column>
+            <c:column colspan="3" type="large"> 3 </c:column>
+            <c:column colspan="3" type="large"> 3 </c:column>
+            <c:column colspan="3" type="large"> 3 </c:column>
+            <c:column colspan="3" type="large"> 3 </c:column>
         </c:row><br/>
         <c:badge styleClass="slds-theme--inverse" title="4*3"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="4" boxType="large"> 4 </c:column>
-            <c:column colspan="4" boxType="large"> 4 </c:column>
-            <c:column colspan="4" boxType="large"> 4 </c:column>
+            <c:column colspan="4" type="large"> 4 </c:column>
+            <c:column colspan="4" type="large"> 4 </c:column>
+            <c:column colspan="4" type="large"> 4 </c:column>
         </c:row><br/>
         <c:badge styleClass="slds-theme--inverse" title="6*2"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="6" boxType="large"> 6 </c:column>
-            <c:column colspan="6" boxType="large"> 6 </c:column>
+            <c:column colspan="6" type="large"> 6 </c:column>
+            <c:column colspan="6" type="large"> 6 </c:column>
         </c:row><br/>
         <c:badge styleClass="slds-theme--inverse" title="12*1"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
-            <c:column colspan="12" boxType="large"> 12 </c:column>     
+            <c:column colspan="12" type="large"> 12 </c:column>
         </c:row>
         <br/><br/>
          <br/><br/>
@@ -98,5 +98,5 @@
             <c:process title="Closed"  type="incomplete"></c:process>
         </c:processbar>
   </body>
-   
+
 </apex:page>

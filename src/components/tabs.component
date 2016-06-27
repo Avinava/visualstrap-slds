@@ -1,0 +1,9 @@
+<apex:component layout="none">
+    <apex:attribute type="String" name="type" description="tab type"/>
+    <div class="slds-tabs--{!type}">
+        <ul class="slds-tabs--{!type}__nav" role="tablist">
+            <apex:componentBody />
+        </ul>
+        <apex:componentBody />
+    </div>
+</apex:component>

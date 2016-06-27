@@ -1,0 +1,5 @@
+<apex:component layout="none">
+     <div class="slds-panel__section">
+        <apex:componentBody />
+    </div>
+</apex:component>

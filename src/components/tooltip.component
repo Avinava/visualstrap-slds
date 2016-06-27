@@ -1,0 +1,7 @@
+<apex:component layout="none" selfClosing="true">
+    <apex:attribute type="String" name="position" description="tooltip display position "/>
+    <apex:attribute name="text" type="String" description="help text for the tooltip"/>
+    <div class="slds-popover slds-popover--tooltip slds-nubbin--{!position}" role="tooltip">
+        <div class="slds-popover__body">{!text}</div>
+    </div>
+</apex:component>

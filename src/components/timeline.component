@@ -1,0 +1,46 @@
+<apex:component layout="none">
+    <li>
+        <span class="slds-assistive-text">Task</span>
+        <div class="slds-media">
+            <div class="slds-media__body">
+                <div class="slds-media slds-media--timeline slds-timeline__media--task">
+                    <div class="slds-media__figure slds-timeline__icon">
+                        <div class="slds-icon_container">
+                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-standard-task">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-media">
+                            <div class="slds-media__body">
+                                <p class="slds-truncate" title="Review proposals for EBC deck with larger team and have marketing review this"><a href="javascript:void(0);">Review proposals for EBC deck with larger team and have marketing review this</a></p>
+                                <ul class="slds-list--horizontal slds-wrap">
+                                    <li class="slds-m-right--large">
+                                        <span class="tile__label slds-text-heading--label-normal">Contact:</span>
+                                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
+                                    </li>
+                                    <li class="slds-m-right--large">
+                                        <span class="tile__label slds-text-heading--label-normal">Assigned to:</span>
+                                        <span class="slds-text-body--small"><a href="javascript:void(0);">Betty Mason</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-media__figure slds-media__figure--reverse">
+                <div class="slds-timeline__actions">
+                    <p class="slds-timeline__date">Feb 24</p>
+                    <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
+                        <svg aria-hidden="true" class="slds-button__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Switch</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </li>
+</apex:component>

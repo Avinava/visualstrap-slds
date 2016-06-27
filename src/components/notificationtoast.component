@@ -1,0 +1,23 @@
+<apex:component layout="none" selfClosing="true">
+    <apex:attribute type="String" name="title" description=" toast title"/>
+    <apex:attribute type="String" name="style" description="inline style for notification"/>
+    <apex:attribute type="String" name="theme" description="type of this toast component"/>
+    <apex:attribute type="String" name="icon" description="icon used for this component"/>
+    <apex:attribute type="boolean" name="texture" description="Stripped notification background"/>
+    <div class="slds-notify_container" style="{!style}">
+        <div class="slds-notify slds-notify--toast slds-theme--{!theme} {!IF(texture,'slds-theme--alert-texture','')}" role="alert">
+            <button class="slds-button slds-button--icon-inverse slds-notify__close">
+                <!--
+                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/utility-sprite/svg/symbols.svg#')}{!icon}"></use>
+                </svg>
+                -->
+                <c:icon pathname="utility" name="{!icon}" type="large"/>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <span class="slds-notify__content">
+                <h2 class="slds-text-heading--small">{!title}</h2>
+            </span>     
+        </div> 
+    </div>    
+</apex:component>
