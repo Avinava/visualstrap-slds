@@ -5,11 +5,7 @@
     <div class="slds-page-header" role="banner">
         <div class="slds-media slds-media--center">
             <div class="slds-media__figure">
-                <!--
-                <svg aria-hidden="true" class="slds-icon slds-icon-standard-opportunity">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/standard-sprite/svg/symbols.svg#')}{!icon}"></use>
-                </svg>-->
-                <c:icon pathname="standard" name="{!icon}" />
+                <c:icon pathname="standard" name="{!icon}" type="large"/>
             </div>
             <div class="slds-media__body">
                 <p class="slds-page-header__title slds-truncate slds-align-middle">{!title}</p>

@@ -1,30 +1,30 @@
 <apex:component layout="none">
+    <apex:attribute name="title" description="title of this timeline section" type="String"/>
+    <apex:attribute name="date" description="current date of this timeline section" type="String"/>
+    <apex:attribute name="iconpathname" type="String" description="path name of the used icon"/>
+    <apex:attribute name="icon" type="String" description="icon name for this component"/>
+    <apex:attribute name="styleClass" type="String" description="css style class for this component"/>
+    <style>
+        .slds-media--timeline:before{
+            display:none;
+        }
+    </style>
     <li>
-        <span class="slds-assistive-text">Task</span>
         <div class="slds-media">
             <div class="slds-media__body">
-                <div class="slds-media slds-media--timeline slds-timeline__media--task">
+                <div class="slds-media slds-media--timeline {!styleClass}">
                     <div class="slds-media__figure slds-timeline__icon">
                         <div class="slds-icon_container">
-                            <svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-standard-task">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#task"></use>
-                            </svg>
+                            <c:icon type="large" pathname="{!iconpathname}" name="{!icon}" />    
                         </div>
                     </div>
                     <div class="slds-media__body">
                         <div class="slds-media">
                             <div class="slds-media__body">
-                                <p class="slds-truncate" title="Review proposals for EBC deck with larger team and have marketing review this"><a href="javascript:void(0);">Review proposals for EBC deck with larger team and have marketing review this</a></p>
-                                <ul class="slds-list--horizontal slds-wrap">
-                                    <li class="slds-m-right--large">
-                                        <span class="tile__label slds-text-heading--label-normal">Contact:</span>
-                                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
-                                    </li>
-                                    <li class="slds-m-right--large">
-                                        <span class="tile__label slds-text-heading--label-normal">Assigned to:</span>
-                                        <span class="slds-text-body--small"><a href="javascript:void(0);">Betty Mason</a></span>
-                                    </li>
-                                </ul>
+                                <p class="slds-truncate">
+                                    <a href="javascript:void(0);">{!title}</a>
+                                </p>
+                                <apex:componentBody />
                             </div>
                         </div>
                     </div>
@@ -32,11 +32,9 @@
             </div>
             <div class="slds-media__figure slds-media__figure--reverse">
                 <div class="slds-timeline__actions">
-                    <p class="slds-timeline__date">Feb 24</p>
+                    <p class="slds-timeline__date">{!date}</p>
                     <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
-                        <svg aria-hidden="true" class="slds-button__icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
-                        </svg>
+                        <c:icon type="large" pathname="utility" name="switch" />
                         <span class="slds-assistive-text">Switch</span>
                     </button>
                 </div>

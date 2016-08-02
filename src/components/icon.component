@@ -1,9 +1,9 @@
 <apex:component selfClosing="true" layout="none">
-    <apex:attribute type="String"  description="icon pathname" name="pathname" required="true"/>
     <apex:attribute type="String" description="icon name" name="name" required="true" />
     <apex:attribute type="String" description="type of icon" name="type"/>
     <apex:attribute type="String" description="extra css styleclasses for this icon or inline css" name="style"/>
-    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--{!type}" style="{!style}">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/utility-sprite/svg/symbols.svg#')}{!name}"></use>
+    <apex:attribute type="String" description="pathname for this icon" name="pathname"/>
+    <svg aria-hidden="true" class="slds-button__icon slds-icon--{!type}" style="{!style}">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/')}{!pathname}-sprite/svg/symbols.svg#{!name}"></use>
     </svg>
 </apex:component>

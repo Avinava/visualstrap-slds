@@ -1,5 +1,6 @@
 <apex:component layout="none" selfClosing="true">
     <apex:attribute name="styleClass" description="css style classs for style this component" type="String"/>
     <apex:attribute name="title" description="title of this component" type="String"/>
-    <span class="slds-badge {!styleClass}">{!title}</span>    
+    <apex:attribute name="style" description="inline css style for this component" type="String"/>
+    <span class="slds-badge {!styleClass}" style="{!style}">{!title}</span>    
 </apex:component>

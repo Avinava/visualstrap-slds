@@ -10,15 +10,28 @@
             body {
                 padding: 1rem;
             }
+            h2.demo-header{
+                font-size:20px;
+            }
+            .slds-notify-container, .slds-notify_container{
+                position:relative;
+            }
+            .slds-popover{
+                margin-left:25px;
+            }
         </style>
     </head>
     <body>
+        <h2 class="demo-header"> Notification Toast  </h2>
+        <hr/>
+        <c:notificationtoast title="Base Toast"  icon="close" theme="error" texture="true"/>
         <br/><br/>
-        <c:notificationtoast title="Base Toast" style="margin-top:60px;" icon="close" theme="error" texture="true"/>
+        <h2 class="demo-header"> Notification Alert  </h2>
+        <hr/>
+        <c:notificationalert title="Base System Alert" icon="close"  texture="true">  </c:notificationalert>
         <br/><br/>
-        <c:notificationalert title="Base System Alert" style="margin-top:20px;" icon="close"  texture="true">  </c:notificationalert>
-
-        <br/><br/>
+        <h2 class="demo-header"> Card  </h2>
+        <hr/>
          <c:card title="Test Card" icon="contact">
             <table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
               <thead>
@@ -41,7 +54,9 @@
               </tbody>
             </table>
         </c:card>
-        <br/>
+        <br/><br/>
+        <h2 class="demo-header"> Grid System  </h2>
+        <hr/>
         <c:badge styleClass="slds-theme--inverse" title="1*12"/><br/><br/>
         <c:row styleClass="slds-grid--pull-padded">
             <c:column colspan="1" type="large"> 1 </c:column>
@@ -89,7 +104,8 @@
             <c:column colspan="12" type="large"> 12 </c:column>
         </c:row>
         <br/><br/>
-         <br/><br/>
+        <h2 class="demo-header"> Process Bar  </h2>
+        <hr/>
         <c:processbar >
             <c:process title="Contacted"  type="complete"></c:process>
             <c:process title="Open"  type="complete"></c:process>
@@ -97,6 +113,167 @@
             <c:process title="Nurturing"  type="incomplete"></c:process>
             <c:process title="Closed"  type="incomplete"></c:process>
         </c:processbar>
+        <br/><br/>
+        <h2 class="demo-header"> Page Header </h2>
+        <hr/>
+        <c:pageheader title="Visualstrap Lightning System" subtitle="cloudcaliber technologies Pvt. Ltd." icon="opportunity"/>
+        <br/><br/>
+        <h2 class="demo-header"> Button Group </h2>
+        <hr/>
+        <c:buttongroup >
+            <c:button type="error" name="button Error"/>
+            <c:button type="info" name="button info"/>
+            <c:button type="success" name="button success"/>
+            <c:button type="inverse" name="button inverse"/>    
+        </c:buttongroup>
+        <br/><br/>
+        <h2 class="demo-header"> Panel </h2>
+        <hr/>
+         <c:panel title="Test Panel" subtitle="kjjhkjhksad kjlkjlkjlkjaskldj sadasd" >
+                <c:button type="error" name="button Error" />
+                <c:button type="info" name="button info" />
+                <c:button type="success" name="button success" />
+                <c:button type="inverse" name="button inverse" />    
+            <c:panelsection >
+                <h3 class="slds-text-heading--small slds-m-bottom--medium">Task Information</h3>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Subject</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Follow up on &#x27;15 Contract</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Due Date</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">6/18/16</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Assigned TO</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Jason Dewar</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Name</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Adam Choi</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Related To</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Tesla Cloudhub + Anypoint Connectors</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Comments</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static slds-text-longform">Adam was open to doing more business in the 4th quarter. Follow up with marketing demo and email templates.</span>
+                    </div>
+                </div>
+            </c:panelsection>
+            <c:panelsection >
+                <h3 class="slds-text-heading--small slds-m-bottom--medium">Additional Information</h3>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Status</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Not Started</span>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+                    <span class="slds-form-element__label">Priority</span>
+                    <div class="slds-form-element__control">
+                        <span class="slds-form-element__static">Normal</span>
+                    </div>
+                </div>
+            </c:panelsection>      
+         </c:panel>
+         <br/><br/>
+         <h2 class="demo-header"> Pills </h2>
+         <hr/>
+         <c:pills title="Test Label" icon="close"/>
+         <br/><br/>
+         <h2 class="demo-header"> Tooltip </h2>
+         <hr/>
+         <c:tooltip position="right" text="test tooltip right"/>
+         <c:tooltip position="left" text="test tooltip left"/>
+         <c:tooltip position="top" text="test tooltip top"/>
+         <c:tooltip position="bottom" text="test tooltip bottom"/>
+         <br/><br/>
+         <h2 class="demo-header"> Tiles </h2>
+         <hr/>
+         <c:tiles icon="groups" iconpathname="standard" title="salesforce Lightning Design System">
+            <div class="slds-tile__detail slds-text-body--small">
+                <dl class="slds-dl--horizontal">
+                    <dt class="slds-dl--horizontal__label">
+                        <p class="slds-truncate" title="Company">Company:</p>
+                    </dt>
+                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate" title="Salesforce">Salesforce</p>
+                    </dd>
+                    <dt class="slds-dl--horizontal__label">
+                        <p class="slds-truncate" title="Email">Email:</p>
+                    </dt>
+                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate" title="salesforce-ux@salesforce.com">salesforce-ux@salesforce.com</p>
+                    </dd>
+                </dl>
+            </div>
+         </c:tiles>
+         <br/><br/>
+         <h2 class="demo-header"> Timeline </h2>
+         <hr/>
+         <c:timelineblock >
+             <c:timeline title="Review proposals for EBC deck with larger team and have marketing review this" iconpathname="standard" icon="task" date="Feb 24" styleClass="slds-timeline__media--task">
+                <ul class="slds-list--horizontal slds-wrap">
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">To:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
+                    </li>
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">From:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Jason Dewar</a></span>
+                    </li>
+                </ul>
+             </c:timeline>
+             <c:timeline title="Review proposals for EBC deck with larger team and have marketing review this" iconpathname="standard" icon="event" date="Feb 24" styleClass="slds-timeline__media--event">
+                  <ul class="slds-list--horizontal slds-wrap">
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">To:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
+                    </li>
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">From:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Jason Dewar</a></span>
+                    </li>
+                </ul>
+             </c:timeline>
+             <c:timeline title="Review proposals for EBC deck with larger team and have marketing review this" iconpathname="standard" icon="log_a_call" date="Feb 24" styleClass="slds-timeline__media--call">
+                  <ul class="slds-list--horizontal slds-wrap">
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">To:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
+                    </li>
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">From:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Jason Dewar</a></span>
+                    </li>
+                </ul>
+             </c:timeline>
+             <c:timeline title="Review proposals for EBC deck with larger team and have marketing review this" iconpathname="standard" icon="email" date="Feb 24" styleClass="slds-timeline__media--email">
+                  <ul class="slds-list--horizontal slds-wrap">
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">To:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Lei Chan</a></span>
+                    </li>
+                    <li class="slds-m-right--large">
+                        <span class="tile__label slds-text-heading--label-normal">From:</span>
+                        <span class="slds-text-body--small"><a href="javascript:void(0);">Jason Dewar</a></span>
+                    </li>
+                </ul>
+             </c:timeline>
+         </c:timelineblock>
   </body>
 
 </apex:page>

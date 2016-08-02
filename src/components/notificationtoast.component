@@ -7,12 +7,7 @@
     <div class="slds-notify_container" style="{!style}">
         <div class="slds-notify slds-notify--toast slds-theme--{!theme} {!IF(texture,'slds-theme--alert-texture','')}" role="alert">
             <button class="slds-button slds-button--icon-inverse slds-notify__close">
-                <!--
-                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/utility-sprite/svg/symbols.svg#')}{!icon}"></use>
-                </svg>
-                -->
-                <c:icon pathname="utility" name="{!icon}" type="large"/>
+                <c:icon pathname="utility" name="{!icon}" type="small"/>
                 <span class="slds-assistive-text">Close</span>
             </button>
             <span class="slds-notify__content">

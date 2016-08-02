@@ -1,23 +1,35 @@
 <apex:component layout="none">
+    <style>
+       .panel-button .slds-button-group{
+               display: inherit !important;
+       }
+       .slds-panel-border{
+           height: 845px;
+            background: #f4f6f9;
+            padding: 1rem;    
+       }     
+    </style>
     <apex:attribute name="title" type="String" description="title of this card"/>
     <apex:attribute name="subtitle" type="String" description="sub title of this card"/>
     <apex:attribute name="icon" type="String" description="icon used for this component"/>
-    <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap">
-        <div class="slds-form--stacked slds-grow slds-scrollable--y">
-            <div class="slds-panel__section slds-has-divider--bottom">
-                <div class="slds-media slds-tile">
-                    <div class="slds-media__body">
-                        <p class="tile__title slds-truncate slds-text-heading--small"><a href="javascript:void(0);">{!title}</a></p>
-                        <div class="slds-tile__detail slds-text-body--small">
-                            <p class="slds-truncate">{!subtitle}</p>
-                            <div class="slds-button-group slds-m-top--small" role="group">
-                                <apex:componentBody />
+    <div class="slds-panel-border">
+        <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap">
+            <div class="slds-form--stacked slds-grow slds-scrollable--y">
+                <div class="slds-panel__section slds-has-divider--bottom">
+                    <div class="slds-media slds-tile">
+                        <div class="slds-media__body">
+                            <p class="tile__title slds-truncate slds-text-heading--small"><a href="javascript:void(0);">{!title}</a></p>
+                            <div class="slds-tile__detail slds-text-body--small panel-button">
+                                <p class="slds-truncate">{!subtitle}</p>
+                                <div class="slds-button-group slds-m-top--small" role="group">
+                                    <apex:componentBody />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <c:panelsection />
             </div>
-            <c:panelsection />
         </div>
     </div>
 </apex:component>
