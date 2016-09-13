@@ -29,5 +29,11 @@ Components
 - timeline
 - tooltip
 
+Screenshots
+-
 
+- Components
 <img width="1420" alt="screen shot 2016-06-23 at 3 05 18 pm" src="https://cloud.githubusercontent.com/assets/1398711/18489781/b51d9e24-7a1c-11e6-888d-2907b7f2af7e.png">
+
+- Icons
+<img width="1420" src="https://cloud.githubusercontent.com/assets/1398711/18490579/3a32d108-7a20-11e6-906c-09d5a4515bf7.png"/>
