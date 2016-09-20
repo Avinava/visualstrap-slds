@@ -1,9 +1,7 @@
 <apex:component layout="none">
-    <apex:attribute type="String" name="type" description="tab type"/>
-    <div class="slds-tabs--{!type}">
-        <ul class="slds-tabs--{!type}__nav" role="tablist">
-            <apex:componentBody />
-        </ul>
+    <apex:attribute type="Boolean" name="scoped" description="tab type scoped or default" default="false"/>
+    <apex:attribute type="String" name="style" description="inline css style for this component"/>
+    <div class="slds-tabs--{!IF(scoped == true,'scoped','default')}" style="{!style}">
         <apex:componentBody />
     </div>
 </apex:component>

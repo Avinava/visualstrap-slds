@@ -4,7 +4,7 @@
     <apex:attribute name="iconpathname" type="String" description="path name of the used icon"/>
     <div class="slds-tile slds-media">
         <div class="slds-media__figure">
-            <c:icon type="large" name="{!icon}" pathname="{!iconpathname}"/>
+            <c:icon size="large" name="{!icon}" pathname="{!iconpathname}"/>
         </div>
         <div class="slds-media__body">
             <p class="slds-truncate" >
