@@ -27,6 +27,6 @@
         <div class="slds-card__body">
             <apex:componentBody />
         </div>
-        <div class="slds-card__footer"><a href="javascript:void(0);">View All <span class="slds-assistive-text">entity type</span></a></div>
+        <div class="slds-card__footer">&nbsp;</div>
     </div>
 </apex:component>
