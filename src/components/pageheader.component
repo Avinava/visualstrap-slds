@@ -5,7 +5,7 @@
     <div class="slds-page-header" role="banner">
         <div class="slds-media slds-media--center">
             <div class="slds-media__figure">
-                <c:icon pathname="standard" name="{!icon}" type="large"/>
+                <c:icon pathname="standard" name="{!icon}" size="large"/>
             </div>
             <div class="slds-media__body">
                 <p class="slds-page-header__title slds-truncate slds-align-middle">{!title}</p>

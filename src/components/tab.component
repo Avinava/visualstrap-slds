@@ -1,8 +1,9 @@
 <apex:component layout="none" selfClosing="true">
-    <apex:attribute type="String" name="type" description="tab type"/>
+    <apex:attribute type="Boolean" name="scoped" description="tab type scoped or default" default="false"/>
     <apex:attribute type="String" name="name" description="tab name"/>
-    <apex:attribute type="String" description="tab Id" name="id"/>
-    <li class="slds-tabs--{!type}__item slds-text-heading--label" role="presentation">
-        <a class="slds-tabs--{!type}__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="{!id}">{!name}</a>
+    <apex:attribute type="String" description="tab Id" name="id" required="true"/>
+    
+    <li class="slds-tabs--{!IF(scoped == true,'scoped','default')}__item slds-text-heading--label">
+        <a class="slds-tabs--{!IF(scoped == true,'scoped','default')}__link" aria-controls="{!id}">{!name}</a>
     </li>
 </apex:component>

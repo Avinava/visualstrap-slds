@@ -1,0 +1,5 @@
+<apex:component layout="none" selfClosing="false">
+    <div class="vs-slds">
+        <apex:componentBody />
+    </div>
+</apex:component>

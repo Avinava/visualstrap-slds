@@ -1,5 +1,7 @@
 <apex:component layout="none">
-     <div class="slds-panel__section">
+     <apex:attribute name="title" description="title of yhis section" type="String"/>
+     <div class="slds-panel__section" >
+        <h3 class="slds-text-heading--small slds-m-bottom--medium">{!title}</h3>
         <apex:componentBody />
     </div>
 </apex:component>

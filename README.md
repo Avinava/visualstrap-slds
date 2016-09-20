@@ -12,7 +12,8 @@ Visualstrap component styled implementation of Lightning Design System for Visua
 
 Components
 -
-- lightningblock
+- importslds
+- sldsblock
 - row
 - column
 - badge

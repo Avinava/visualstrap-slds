@@ -15,7 +15,7 @@
                 <div class="slds-media slds-media--timeline {!styleClass}">
                     <div class="slds-media__figure slds-timeline__icon">
                         <div class="slds-icon_container">
-                            <c:icon type="large" pathname="{!iconpathname}" name="{!icon}" />    
+                            <c:icon size="small" pathname="{!iconpathname}" name="{!icon}" />    
                         </div>
                     </div>
                     <div class="slds-media__body">
@@ -34,7 +34,7 @@
                 <div class="slds-timeline__actions">
                     <p class="slds-timeline__date">{!date}</p>
                     <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
-                        <c:icon type="large" pathname="utility" name="switch" />
+                        <c:icon size="small" pathname="utility" name="switch" />
                         <span class="slds-assistive-text">Switch</span>
                     </button>
                 </div>
