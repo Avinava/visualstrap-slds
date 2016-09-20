@@ -1,9 +1,14 @@
 <apex:component selfClosing="true" layout="none">
     <apex:attribute type="String" description="icon name" name="name" required="true" />
-    <apex:attribute type="String" description="type of icon" name="type"/>
-    <apex:attribute type="String" description="extra css styleclasses for this icon or inline css" name="style"/>
-    <apex:attribute type="String" description="pathname for this icon" name="pathname"/>
-    <svg aria-hidden="true" class="slds-button__icon slds-icon--{!type}" style="{!style}">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/')}{!pathname}-sprite/svg/symbols.svg#{!name}"></use>
-    </svg>
+    <apex:attribute type="String" description="size of icon" name="size" required="true"/>
+    <apex:attribute type="String" description="inline css for this icon" name="style"/>
+    <apex:attribute type="String" description="pathname for this icon" name="pathname" required="true"/>
+    <apex:attribute type="String" description="circled background or not" name="container"/>
+    <apex:attribute type="String" description="extra css classes for this component" name="{!styleClass}"/>
+    
+    <span class="slds-icon_container slds-icon-{!pathname}-{!IF(CONTAINS(name,'_'),SUBSTITUTE(name, '_', '-'),name)} {!IF(container == 'circle','slds-icon_container--circle','')} {!If(name == 'task2','slds-icon-standard-task-2','')} " style="{!style}">
+        <svg aria-hidden="true" class="slds-icon slds-icon--{!size} {!IF(pathname == 'utility','slds-icon-text-default','')}">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.visualstrap_slds,'/assets/icons/')}{!pathname}-sprite/svg/symbols.svg#{!name}"></use>
+        </svg>
+    </span>
 </apex:component>
