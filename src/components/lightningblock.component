@@ -1,5 +1,0 @@
-<apex:component >
-    <div class="slds">
-        <apex:componentBody />
-    </div>    
-</apex:component>
