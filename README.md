@@ -18,8 +18,8 @@ Components
 - column
 - badge
 - card
-- notificationtoast
-- notificationalert
+- toast
+- alert
 - processbar
 - process
 - spinner
