@@ -1,0 +1,6 @@
+<apex:component layout="none">
+    <apex:attribute type="Boolean" name="scoped" default="false" description="tab type scoped or default"/>
+    <ul class="slds-tabs--{!IF(scoped == true,'scoped','default')}__nav" role="tablist">
+        <apex:componentBody />
+    </ul>
+</apex:component>
