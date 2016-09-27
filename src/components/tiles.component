@@ -2,16 +2,19 @@
     <apex:attribute name="title" type="String" description="title of this card"/>
     <apex:attribute name="icon" type="String" description="icon used for this component"/>
     <apex:attribute name="iconpathname" type="String" description="path name of the used icon"/>
+    <apex:attribute name="iconsize" type="String" description="icon size for this component"/>
     <div class="slds-tile slds-media">
         <div class="slds-media__figure">
-            <c:icon size="large" name="{!icon}" pathname="{!iconpathname}"/>
+            <c:icon size="{!IF(iconsize != null,iconsize,'small')}" name="{!icon}" pathname="{!iconpathname}"/>
         </div>
         <div class="slds-media__body">
             <p class="slds-truncate" >
                 <a href="javascript:void(0);">{!title}</a>
             </p>
             <div class="slds-tile__detail slds-text-body--small">
-                <apex:componentBody />
+                <dl class="slds-dl--horizontal">
+                    <apex:componentBody />
+                </dl>
             </div>
         </div>
     </div>
