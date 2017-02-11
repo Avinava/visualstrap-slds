@@ -10,6 +10,10 @@ Visualstrap component styled implementation of Lightning Design System for Visua
 - Under Development
 - Components / Component names may change
 
+Installation
+-
+ - Unamanaged Package : https://login.salesforce.com/packaging/installPackage.apexp?p0=04t28000000b6jo
+
 Components
 -
 - importslds
