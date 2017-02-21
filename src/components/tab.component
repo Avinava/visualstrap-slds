@@ -1,7 +1,7 @@
 <apex:component layout="none" selfClosing="true">
     <apex:attribute type="Boolean" name="scoped" description="tab type scoped or default" default="false"/>
     <apex:attribute type="String" name="name" description="tab name"/>
-    <apex:attribute type="String" description="tab Id" name="id" required="true"/>
+    <apex:attribute type="String" description="tab Id to control tab area" name="id" required="true"/>
     
     <li class="slds-tabs--{!IF(scoped == true,'scoped','default')}__item slds-text-heading--label">
         <a class="slds-tabs--{!IF(scoped == true,'scoped','default')}__link" aria-controls="{!id}">{!name}</a>

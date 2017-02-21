@@ -1,9 +1,19 @@
 <apex:component layout="none">
     <apex:attribute name="title" type="String" description="title of this process div"/>
     <apex:attribute name="type" type="String" description="process type"/>
+    <style>
+        .slds-tabs--path .slds-is-complete .slds-tabs--path__title,.slds-tabs--path .slds-is-complete .slds-tabs--path__stage{
+             transform: none !important;   
+        }
+        .slds-tabs--path__item:first-child {
+            border-radius: 15rem 0 0 15rem !important;
+        }
+    </style>
     <li class="slds-tabs--path__item slds-is-{!type}" role="presentation">
-        <a class="slds-tabs--path__link" id="tabs-path-1" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
-            <c:icon pathname="utility" name="check" size="small" rendered="{!type == 'complete'}" style="position: absolute;left: 34%;top: 18%;"/>
+        <a class="slds-tabs--path__link">
+            <span class="slds-tabs--path__stage">
+                <c:icon pathname="utility" name="check" size="x-small" rendered="{!type == 'complete'}" style="position: absolute;left: 34%;top: 18%;"/>
+            </span>
             <span class="slds-tabs--path__title">{!title}</span>
         </a>
     </li>

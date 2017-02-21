@@ -4,7 +4,7 @@
     <apex:attribute type="String" description="inline css for this icon" name="style"/>
     <apex:attribute type="String" description="pathname for this icon" name="pathname" required="true"/>
     <apex:attribute type="String" description="circled background or not" name="container"/>
-    <apex:attribute type="String" description="extra css classes for this component" name="{!styleClass}"/>
+    <apex:attribute type="String" description="extra css classes for this component" name="styleClass"/>
     
     <span class="slds-icon_container slds-icon-{!pathname}-{!IF(CONTAINS(name,'_'),SUBSTITUTE(name, '_', '-'),name)} {!IF(container == 'circle','slds-icon_container--circle','')} {!If(name == 'task2','slds-icon-standard-task-2','')} " style="{!style}">
         <svg aria-hidden="true" class="slds-icon slds-icon--{!size} {!IF(pathname == 'utility','slds-icon-text-default','')}">
